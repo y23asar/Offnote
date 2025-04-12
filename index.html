@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Offline File Editor</title>
+  <title>Offline Note Sharing App</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
+  <!-- Authentication Section -->
   <div id="authSection">
     <h2>Login</h2>
     <form id="loginForm">
@@ -28,9 +29,16 @@
     </div>
   </div>
 
+  <!-- File Editor Section -->
   <div id="appSection" style="display:none;">
-    <h2>Offline Text File Editor</h2>
+    <h2>Offline Note Sharing App</h2>
     <textarea id="fileContent" placeholder="Type your notes here..." rows="10" cols="50"></textarea><br />
+    
+    <!-- File Upload Section -->
+    <h3>Upload File</h3>
+    <input type="file" id="fileUpload" />
+    <button onclick="uploadFile()">Upload</button><br/>
+    
     <input type="text" id="fileCode" placeholder="File Code (leave empty to auto-generate)" /><br/>
     <button onclick="saveOffline()">Save Offline</button>
     <button onclick="loadFile()">Load by Code</button>
@@ -55,4 +63,3 @@
 
 </body>
 </html>
-
