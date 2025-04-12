@@ -1,16 +1,1 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f5f5f5;
-  }
-  input, textarea, button {
-    margin: 8px;
-    padding: 8px;
-    font-size: 16px;
-  }
-  button {
-    cursor: pointer;
-  }
-  #qrContainer {
-    margin-top: 20px;
-  }
+
