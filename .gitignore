@@ -1,5 +1,9 @@
-# Node modules
+# Node dependencies
 node_modules/
+
+# Environment files
+.env
+.env.*
 
 # Logs
 logs
@@ -8,11 +12,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment variables
-.env
-.env.*
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# OS files
+# System files
 .DS_Store
 Thumbs.db
 
@@ -20,4 +26,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Optional npm cache directory
+# Coverage and build
+coverage/
+dist/
+build/
