@@ -11,4 +11,6 @@ body {
   button {
     cursor: pointer;
   }
-  
+  #qrContainer {
+    margin-top: 20px;
+  }
