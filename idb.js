@@ -1,4 +1,4 @@
-// Very minimal IndexedDB wrapper using idb
+// Minimal IndexedDB helper using idb
 const dbPromise = idb.openDB('fileDB', 1, {
     upgrade(db) {
       db.createObjectStore('files');
@@ -14,4 +14,3 @@ const dbPromise = idb.openDB('fileDB', 1, {
     const db = await dbPromise;
     return db.get('files', code);
   }
-  
